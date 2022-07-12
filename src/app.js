@@ -8,7 +8,8 @@ const api = require("./routes/api")
 const app = express()
 
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: ['http://localhost:3000','https://nasa-emino.herokuapp.com/'],
+  credentials: true
 }))
 
 app.use(morgan("combined"))
