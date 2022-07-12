@@ -138,7 +138,7 @@ async function existsLaunchWithId(launchId) {
 }
 
 async function abortLaunchById(launchId) {
-  // instead of deleting the utem from the database (not recommended), pass a boolean property and set true or false
+  // instead of deleting the item from the database (not recommended), pass a boolean property and set true or false
   const aborted =  await launches.updateOne({
     flightNumber: launchId
   }, {
